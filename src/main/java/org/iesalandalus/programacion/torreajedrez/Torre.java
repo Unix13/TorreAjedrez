@@ -201,7 +201,7 @@ public class Torre {
 	}
 
 	// Metodos hashCade y equals
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(color, posicion);
@@ -219,4 +219,10 @@ public class Torre {
 		return color == other.color && Objects.equals(posicion, other.posicion);
 	}
 
+	// Método toString
+	
+	@Override
+	public String toString() {
+		return "fila=" + posicion.getFila() + ", columna=" + posicion.getColumna() + ", color=" + color;
+	}
 }
