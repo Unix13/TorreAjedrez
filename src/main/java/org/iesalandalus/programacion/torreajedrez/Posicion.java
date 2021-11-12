@@ -50,7 +50,7 @@ public class Posicion {
 		setColumna(columna);
 
 	}
-//Creo el constructor copia
+//constructor copia
 
 	public Posicion(Posicion p) // throws NullPointerException
 	{
@@ -60,8 +60,8 @@ public class Posicion {
 		setColumna(p.getColumna());
 
 	}
-//Creo los métodos equals y hashCode
-	
+//métodos equals y hashCode
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(columna, fila);
@@ -78,6 +78,11 @@ public class Posicion {
 		Posicion other = (Posicion) obj;
 		return columna == other.columna && fila == other.fila;
 	}
-	
-	
+
+//Método toString
+	@Override
+	public String toString() {
+		return "fila=" + (fila = 1) + ", columna=" + (columna = 'a') + "";
+	}
+
 }
