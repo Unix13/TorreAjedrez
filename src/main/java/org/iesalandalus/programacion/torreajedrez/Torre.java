@@ -173,4 +173,29 @@ public class Torre {
 		}
 	}
 
+	// Método enrocar
+	public void enrocar(Direccion direccion) throws OperationNotSupportedException {
+		if (direccion == null) {
+			throw new NullPointerException("ERROR: La dirección no puede ser nula.");
+		}
+		switch (direccion) {
+		case ENROQUE_CORTO:
+			if (posicion.getColumna() == 'h' && (posicion.getFila() == 1 || posicion.getFila() == 8)) {
+				setPosicion(new Posicion(posicion.getFila(), 'f'));
+			} else {
+				throw new OperationNotSupportedException("ERROR: Movimiento de enroque no válido.");
+			}
+			break;
+		case ENROQUE_LARGO:
+			if (posicion.getColumna() == 'a' && (posicion.getFila() == 1 || posicion.getFila() == 8)) {
+				setPosicion(new Posicion(posicion.getFila(), 'd'));
+			} else {
+				throw new OperationNotSupportedException("ERROR: Movimiento de enroque no válido.");
+			}
+			break;
+		default:
+			break;
+		}
+	}
+
 }
