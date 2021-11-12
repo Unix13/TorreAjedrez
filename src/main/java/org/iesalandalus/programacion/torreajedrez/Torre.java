@@ -1,8 +1,7 @@
 package org.iesalandalus.programacion.torreajedrez;
 
 public class Torre {
-	
-	
+
 	// Atributos
 	private Color color;
 	private Posicion posicion;
@@ -33,5 +32,12 @@ public class Torre {
 			this.posicion = posicion;
 		}
 	}
+	// Constructor por defecto
 
+	public Torre() {
+
+		setColor(Color.NEGRO);
+		setPosicion(new Posicion(8, 'h'));
+	}
+	
 }
