@@ -2,8 +2,12 @@ package org.iesalandalus.programacion.torreajedrez;
 
 public class Posicion {
 
+	// Atributos
+
 	private int fila;
 	private char columna;
+
+	// Getters y setters
 
 	public int getFila() {
 		return fila;
@@ -34,6 +38,14 @@ public class Posicion {
 		} else {
 			throw new IllegalArgumentException("ERROR: Columna no v√°lida.");
 		}
+
+	}
+//Constructor que acepta como par·metros fila y columna
+
+	public Posicion(int fila, char columna) {
+
+		setFila(fila);
+		setColumna(columna);
 
 	}
 
