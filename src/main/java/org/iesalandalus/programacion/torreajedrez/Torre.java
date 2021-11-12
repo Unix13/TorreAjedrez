@@ -39,5 +39,18 @@ public class Torre {
 		setColor(Color.NEGRO);
 		setPosicion(new Posicion(8, 'h'));
 	}
-	
+	// Constructor con parametro color
+
+	public Torre(Color color) {
+
+		setColor(color);
+
+		if (color.equals(Color.BLANCO)) {
+			setPosicion(new Posicion(1, 'h'));
+		} else {
+
+			setPosicion(new Posicion(8, 'h'));
+		}
+	}
+
 }
