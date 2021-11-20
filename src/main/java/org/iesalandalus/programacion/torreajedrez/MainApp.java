@@ -146,11 +146,43 @@ public class MainApp {
 
 		torre = new Torre(elegirColor());
 	}
-	
-	//Método crear torre elegir color y columna inicial
-	
+
+	// Método crear torre elegir color y columna inicial
+
 	private static void crearTorreColumna() {
-		
+
 		torre = new Torre(elegirColor(), elegirColumnaInicial());
+	}
+	// Método mover
+
+	private static void mover() {
+
+		Direccion direccion = null;
+		int pasos;
+		
+		if (torre == null) {
+			System.out.println("ERROR: No existe torre. Debe crear una torre.");
+		} else {
+			mostrarMenuDirecciones();
+			direccion = elegirDireccion();
+
+			if (direccion.equals(Direccion.ENROQUE_CORTO) || direccion.equals(Direccion.ENROQUE_LARGO)) {
+				try {
+					torre.enrocar(direccion);
+				} catch (OperationNotSupportedException e) {
+					System.out.println(e.getMessage());
+				}
+			} else {
+				System.out.println(" ");
+				System.out.print("Introduzca ahora el número de pasos que quiere dar: ");
+				pasos = Entrada.entero();
+
+				try {
+					torre.mover(direccion, pasos);
+				} catch (OperationNotSupportedException e) {
+					System.out.println(e.getMessage());
+				}
+			}
+		}
 	}
 }
