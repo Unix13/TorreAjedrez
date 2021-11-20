@@ -18,27 +18,27 @@ import org.junit.BeforeClass;
 public class TorreTest {
 	
 	private static final String COLOR_NO_ESPERADO = "El color no es el esperado.";
-	private static final String POSICION_NO_ESPERADA = "La posici贸n no es la esperada.";
-	private static final String COLOR_NO_NULO = "Deber铆a haber saltado una excepci贸n indicando que el color no puede ser nulo.";
-	private static final String EXCEPCION_MENSAJE_ADECUADO = "Deber铆a haber saltado una excepci贸n con el mensaje adecuado.";
+	private static final String POSICION_NO_ESPERADA = "La posici髇 no es la esperada.";
+	private static final String COLOR_NO_NULO = "Deber韆 haber saltado una excepci髇 indicando que el color no puede ser nulo.";
+	private static final String EXCEPCION_MENSAJE_ADECUADO = "Deber韆 haber saltado una excepci髇 con el mensaje adecuado.";
 	private static final String ERROR_COLOR_NULO = "ERROR: No se puede asignar un color nulo.";
-	private static final String OBJETO_DEBERIA_SER_NULL = "No se deber铆a haber creado el objeto torre.";
-	private static final String NO_EXCEPCION_MOVIMIENTO_VALIDO = "No deber铆a saltar ninguna excepci贸n ya que los movimientos son v谩lidos.";	
-	private static final String DIRECCION_NO_NULA = "Deber铆a haber saltado una excepci贸n indicando que no se puede mover en una direcci贸n nula.";
-	private static final String ERROR_DIRECCION_NULA = "ERROR: La direcci贸n no puede ser nula.";
+	private static final String OBJETO_DEBERIA_SER_NULL = "No se deber韆 haber creado el objeto torre.";
+	private static final String NO_EXCEPCION_MOVIMIENTO_VALIDO = "No deber韆 saltar ninguna excepci髇 ya que los movimientos son v醠idos.";	
+	private static final String DIRECCION_NO_NULA = "Deber韆 haber saltado una excepci髇 indicando que no se puede mover en una direcci髇 nula.";
+	private static final String ERROR_DIRECCION_NULA = "ERROR: La direcci髇 no puede ser nula.";
 	
-	private static final String PASOS_NO_POSTIVOS = "Deber铆a haber saltado una excepci贸n indicando que no se puede mover pasos no positivos.";
+	private static final String PASOS_NO_POSTIVOS = "Deber韆 haber saltado una excepci髇 indicando que no se puede mover pasos no positivos.";
 	private static final String CADENA_NO_ESPERADA = "La cadena devuelta no es la esperada.";
 	
 	
-	private static final String ERROR_MOVIMIENTO_NO_VALIDO = "ERROR: Movimiento no v谩lido (se sale del tablero).";
-	private static final String ERROR_ENROQUE_NO_VALIDO = "ERROR: Movimiento de enroque no v谩lido.";
+	private static final String ERROR_MOVIMIENTO_NO_VALIDO = "ERROR: Movimiento no v醠ido (se sale del tablero).";
+	private static final String ERROR_ENROQUE_NO_VALIDO = "ERROR: Movimiento de enroque no v醠ido.";
 
-	private static final String ERROR_PASOS_NO_POSITIVOS = "ERROR: El n煤mero de pasos debe ser positivo.";
-	private static final String ERROR_COLUMNA_NO_VALIDA = "ERROR: Columna no v谩lida.";
+	private static final String ERROR_PASOS_NO_POSITIVOS = "ERROR: El n鷐ero de pasos debe ser positivo.";
+	private static final String ERROR_COLUMNA_NO_VALIDA = "ERROR: Columna no v醠ida.";
 	
-	private static final String EXCEPCION_MOVIMIENTO_NO_VALIDO = "Deber铆a haber saltado una excepci贸n indicando que el movimiento no es v谩lido.";
-	private static final String NO_EXCEPCION = "No deber铆a haber saltado este tipo de excepci贸n.";
+	private static final String EXCEPCION_MOVIMIENTO_NO_VALIDO = "Deber韆 haber saltado una excepci髇 indicando que el movimiento no es v醠ido.";
+	private static final String NO_EXCEPCION = "No deber韆 haber saltado este tipo de excepci髇.";
 	
 	private static Posicion posicionDefectoNegro;
 	private static Posicion posicionDefectoBlanco;
