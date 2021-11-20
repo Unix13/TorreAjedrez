@@ -96,10 +96,10 @@ public class MainApp {
 		System.out.println("6. Enroque largo.");
 		System.out.println(" ");
 		System.out.println("============================");
-		
-		}
 
-	//Método elegir Direccion
+	}
+
+	// Método elegir Direccion
 
 	private static Direccion elegirDireccion() {
 
@@ -133,11 +133,18 @@ public class MainApp {
 
 		return elegirDireccion;
 	}
-	//Método crear torre defecto
-	
+	// Método crear torre defecto
+
 	private static void crearTorreDefecto() {
-		
+
 		torre = new Torre();
 	}
-}
 
+	// Método crear torre con parámetro color
+
+	private static void crearTorreColor() {
+
+		torre = new Torre(elegirColor());
+	}
+	
+}
