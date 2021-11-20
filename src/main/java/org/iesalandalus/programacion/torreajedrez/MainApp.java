@@ -25,6 +25,7 @@ public class MainApp {
 			seleccion = elegirOpcion();
 			ejecutarOpcion(seleccion);
 			mostrarTorre();
+			
 
 			if (seleccion == 5) {
 				control = 0;
@@ -34,6 +35,7 @@ public class MainApp {
 
 	// Método mostrar Torre
 	private static void mostrarTorre() {
+		
 		try {
 			System.out.println(torre.toString());
 		} catch (NullPointerException e) {
@@ -100,7 +102,7 @@ public class MainApp {
 
 			columnaInicial = Entrada.caracter();
 
-		} while (Character.toLowerCase(columnaInicial) != 'a' || Character.toLowerCase(columnaInicial) != 'h');
+		} while (columnaInicial !='a' && columnaInicial !='A' && columnaInicial !='h' && columnaInicial !='H');
 		return columnaInicial;
 
 	}
