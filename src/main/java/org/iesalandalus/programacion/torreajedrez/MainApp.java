@@ -140,11 +140,17 @@ public class MainApp {
 		torre = new Torre();
 	}
 
-	// Método crear torre con parámetro color
+	// Método crear torre elegir color
 
 	private static void crearTorreColor() {
 
 		torre = new Torre(elegirColor());
 	}
 	
+	//Método crear torre elegir color y columna inicial
+	
+	private static void crearTorreColumna() {
+		
+		torre = new Torre(elegirColor(), elegirColumnaInicial());
+	}
 }
