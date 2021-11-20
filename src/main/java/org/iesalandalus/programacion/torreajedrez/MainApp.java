@@ -133,6 +133,11 @@ public class MainApp {
 
 		return elegirDireccion;
 	}
-
+	//Método crear torre defecto
+	
+	private static void crearTorreDefecto() {
+		
+		torre = new Torre();
+	}
 }
 
