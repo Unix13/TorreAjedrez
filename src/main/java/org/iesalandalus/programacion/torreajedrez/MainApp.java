@@ -10,6 +10,28 @@ public class MainApp {
 
 	public static void main(String[] args) {
 
+		// Método principal
+
+		int control = 1;
+		int seleccion;
+
+		System.out.println("=====================================");
+		System.out.println("=========Torre de Ajedrez============");
+		System.out.println("=====================================");
+
+		do {
+
+			mostrarMenu();
+			seleccion = elegirOpcion();
+			ejecutarOpcion(seleccion);
+			mostrarTorre();
+
+			if (seleccion == 5) {
+				control = 0;
+			}
+		} while (control != 0);
+	}
+
 	// Método mostrar Torre
 	private static void mostrarTorre() {
 		try {
@@ -189,8 +211,7 @@ public class MainApp {
 	// Método ejecutarOpcion
 
 	private static void ejecutarOpcion(int opcionEjecucion) {
-		
-	
+
 		switch (opcionEjecucion) {
 		case 1:
 			crearTorreDefecto();
