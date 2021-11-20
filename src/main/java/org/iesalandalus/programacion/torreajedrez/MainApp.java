@@ -44,7 +44,7 @@ public class MainApp {
 
 	private static Color elegirColor() {
 
-		Color color = null;
+		Color elegircolor = null;
 		int opcionColor = 0;
 		do {
 			System.out.println("===============");
@@ -59,45 +59,80 @@ public class MainApp {
 
 		switch (opcionColor) {
 		case 1:
-			color = Color.BLANCO;
+			elegircolor = Color.BLANCO;
 			break;
 		case 2:
-			color = Color.NEGRO;
+			elegircolor = Color.NEGRO;
 			break;
 		}
 
-		return color;
+		return elegircolor;
 	}
-	
-	//Método elegir Columna Inicial
+
+	// Método elegir Columna Inicial
 	private static char elegirColumnaInicial() {
-		
-		char columnaInicial=0;
+
+		char columnaInicial = 0;
 		do {
 			System.out.print("Elija la columna inicial");
 
 			columnaInicial = Entrada.caracter();
-			
-		} while (Character.toLowerCase(columnaInicial) != 'a' || Character.toLowerCase(columnaInicial) !='h');
+
+		} while (Character.toLowerCase(columnaInicial) != 'a' || Character.toLowerCase(columnaInicial) != 'h');
 		return columnaInicial;
-		
+
 	}
-	//Método mostrar Menu Direcciones
-	
-		private static void mostrarMenuDirecciones() {
-			
+	// Método mostrar Menu Direcciones
+
+	private static void mostrarMenuDirecciones() {
+
+		System.out.println("============================");
+		System.out.println(" ");
+		System.out.println("1. Mover arriba.");
+		System.out.println("2. Mover abajo.");
+		System.out.println("3. Mover izquierda.");
+		System.out.println("4. Mover derecha.");
+		System.out.println("5. Enroque corto.");
+		System.out.println("6. Enroque largo.");
+		System.out.println(" ");
+		System.out.println("============================");
 		
-			System.out.println("============================");
-			System.out.println(" ");
-			System.out.println("1. Mover arriba.");
-			System.out.println("2. Mover abajo.");
-			System.out.println("3. Mover izquierda.");
-			System.out.println("4. Mover derecha.");
-			System.out.println("5. Enroque corto.");
-			System.out.println("6. Enroque largo.");
-			System.out.println(" ");
-			System.out.println("============================");
 		}
-		
+
+	//Método elegir Direccion
+
+	private static Direccion elegirDireccion() {
+
+		Direccion elegirDireccion = null;
+		int opcionDireccion = 0;
+		do {
+
+			opcionDireccion = Entrada.entero();
+		} while (opcionDireccion < 1 || opcionDireccion > 6);
+
+		switch (opcionDireccion) {
+		case 1:
+			elegirDireccion = Direccion.ARRIBA;
+			break;
+		case 2:
+			elegirDireccion = Direccion.ABAJO;
+			break;
+		case 3:
+			elegirDireccion = Direccion.IZQUIERDA;
+			break;
+		case 4:
+			elegirDireccion = Direccion.DERECHA;
+			break;
+		case 5:
+			elegirDireccion = Direccion.ENROQUE_CORTO;
+			break;
+		case 6:
+			elegirDireccion = Direccion.ENROQUE_LARGO;
+			break;
+		}
+
+		return elegirDireccion;
+	}
 
 }
+
