@@ -10,7 +10,7 @@ public class MainApp {
 
 	public static void main(String[] args) {
 
-	// Método mostrarTorre
+	// Método mostrar Torre
 	private static void mostrarTorre() {
 		try {
 			System.out.println(torre.toString());
@@ -19,7 +19,7 @@ public class MainApp {
 		}
 	}
 
-	// Método mostrarMenu
+	// Método mostrar Menu
 	private static void mostrarMenu() {
 		System.out.println(" ");
 		System.out.println("1. Crear una torre por defecto.");
@@ -29,7 +29,7 @@ public class MainApp {
 		System.out.println("5. Salir.");
 	}
 
-	// Método elegirOpcion
+	// Método elegir Opcion
 	private static int elegirOpcion() {
 		int opcionMenu;
 
@@ -40,7 +40,7 @@ public class MainApp {
 		} while (opcionMenu < 1 || opcionMenu > 5);
 		return opcionMenu;
 	}
-	// Método elegirColor
+	// Método elegir Color
 
 	private static Color elegirColor() {
 
@@ -82,5 +82,22 @@ public class MainApp {
 		return columnaInicial;
 		
 	}
+	//Método mostrar Menu Direcciones
+	
+		private static void mostrarMenuDirecciones() {
+			
+		
+			System.out.println("============================");
+			System.out.println(" ");
+			System.out.println("1. Mover arriba.");
+			System.out.println("2. Mover abajo.");
+			System.out.println("3. Mover izquierda.");
+			System.out.println("4. Mover derecha.");
+			System.out.println("5. Enroque corto.");
+			System.out.println("6. Enroque largo.");
+			System.out.println(" ");
+			System.out.println("============================");
+		}
+		
 
 }
