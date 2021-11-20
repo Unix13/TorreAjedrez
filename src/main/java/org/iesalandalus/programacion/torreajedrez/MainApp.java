@@ -149,7 +149,7 @@ public class MainApp {
 
 	// Método crear torre elegir color y columna inicial
 
-	private static void crearTorreColumna() {
+	private static void crearTorreColorColumna() {
 
 		torre = new Torre(elegirColor(), elegirColumnaInicial());
 	}
@@ -159,7 +159,7 @@ public class MainApp {
 
 		Direccion direccion = null;
 		int pasos;
-		
+
 		if (torre == null) {
 			System.out.println("ERROR: No existe torre. Debe crear una torre.");
 		} else {
@@ -185,4 +185,29 @@ public class MainApp {
 			}
 		}
 	}
+
+	// Método ejecutarOpcion
+
+	private static void ejecutarOpcion(int opcionEjecucion) {
+		
+	
+		switch (opcionEjecucion) {
+		case 1:
+			crearTorreDefecto();
+			break;
+		case 2:
+			crearTorreColor();
+			break;
+		case 3:
+			crearTorreColorColumna();
+			break;
+		case 4:
+			mover();
+			break;
+		case 5:
+			System.out.println("ADIOS!!!");
+			break;
+		}
+	}
+
 }
