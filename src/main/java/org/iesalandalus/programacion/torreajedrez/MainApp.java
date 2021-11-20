@@ -68,5 +68,19 @@ public class MainApp {
 
 		return color;
 	}
+	
+	//Método elegir Columna Inicial
+	private static char elegirColumnaInicial() {
+		
+		char columnaInicial=0;
+		do {
+			System.out.print("Elija la columna inicial");
+
+			columnaInicial = Entrada.caracter();
+			
+		} while (Character.toLowerCase(columnaInicial) != 'a' || Character.toLowerCase(columnaInicial) !='h');
+		return columnaInicial;
+		
+	}
 
 }
